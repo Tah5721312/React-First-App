@@ -19,7 +19,7 @@ header{
 }
 
  h1{
-     animation: ltr 2s 1;
+     animation: ltr 4s 1;
      
  }
 
@@ -28,7 +28,7 @@ header{
 @keyframes ltr{
     0%{
         transform: translateX(-100px);
-        color: cyan;
+        color: rgb(109, 14, 53);
     }
 
 50%{
