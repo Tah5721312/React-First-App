@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import './Header.css';
+import "./Header.css";
 const Header = () => {
   return (
     <div className="myheader">
       <header className="hide-when-mobile ali">
         <h1>
-        <Link to="/">c4a.dev</Link>
+          <Link to="/">c4a.dev</Link>
         </h1>
         <ul className="flex">
           <li className="main-list">
@@ -78,13 +78,13 @@ const Header = () => {
             <input id="html" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <NavLink to="/html">Full Course</NavLink>
               </li>
               <li>
-                <a href="">Crash Course</a>
+                <NavLink to="/css">Crash Course</NavLink>
               </li>
               <li>
-                <a href="">learn in 1h</a>
+                <NavLink to="/JavaScript">learn in 1h</NavLink>
               </li>
             </ul>
           </div>
@@ -95,10 +95,10 @@ const Header = () => {
             <input id="css" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <NavLink to="/css">Full Course</NavLink>
               </li>
               <li>
-                <a href="">CSS Examples</a>
+                <NavLink to="/css">CSS Examples</NavLink>
               </li>
               <li>
                 <label className="mini-projects" htmlFor="mini">
@@ -126,7 +126,7 @@ const Header = () => {
             <input id="js" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">coming soon🔥</a>
+                <NavLink to="/JavaScript">coming soon🔥</NavLink>
               </li>
             </ul>
           </div>

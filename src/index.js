@@ -7,6 +7,12 @@ import Home from './pages/home';
 import Html from './pages/html';
 import Css from './pages/css';
 import Javascript from './pages/javascript';
+
+//import reportWebVitals from './reportWebVitals';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,5 +40,10 @@ root.render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+// At the bottom of your file
+serviceWorkerRegistration.register();
+
+//reportWebVitals();
 
  
